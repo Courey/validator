@@ -10,8 +10,9 @@ A URL validator using Python3
 1. cd into the validator directory
 2. run `./validator.py` to start the program
 3. enter a comma separated list of URLs or enter `quit` to exit.
-    example:
-    `http://google.com, http, http:///someurl.com, http://asdfasdfasdfasdfasdfasd.com, http://google.com/bad`
+
+example:
+`http://google.com, http, http:///someurl.com, http://asdfasdfasdfasdfasdfasd.com, http://google.com/bad`
 
 *note: this program assumes that URLs without a scheme have invalid syntax.
 
