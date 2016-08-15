@@ -72,3 +72,12 @@ while True:
         quit()
     if user_input != "":
         handle_cli_query(user_input)
+
+# This code could be improved for scalability by storing successes and failures in separate arrays.
+# A check for the given url could be made to these arrays before running it through validation.
+# This would prevent work when the same url is given several times during the same session.
+
+# The validate_urls function could be used by an API endpoint. An endpoint would be created on the app layer
+# and either the cotroller (not preferable) or domain entity could utilize this function to validate URLs and pass data forward.
+# It would accept a CSV of URLs and would return an array containing dictionaries describing failures.
+# If possible, I would place these functions in a domain repo
